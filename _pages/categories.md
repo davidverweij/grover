@@ -1,9 +1,10 @@
 ---
-title: Services
-layout: services
+title: Categories
+layout: categories
 intro_image: "images/illustrations/reading.svg"
 intro_image_absolute: true
 intro_image_hide_on_mobile: false
+permalink: /categories/
 ---
 
 # Services that grow with your business
