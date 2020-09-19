@@ -8,22 +8,14 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
-  .feature-image {
-    flex: 0 0 auto;
-    width: 80px;
-    height: 80px;
-    display: flex;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  img {
-    width: 100%;
-    height: auto;
-  }
-  .feature-title {
-  }
-  .feature-content {
-    margin-bottom: 0;
-    margin-top: auto;
-  }
+
+
+}
+.feature-image {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-bottom: 20px;
+  text-align: center;
 }

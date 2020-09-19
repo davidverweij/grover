@@ -20,8 +20,32 @@ bodyClass: page-services-list
 </div>
 
 <div class="container pt-6 pb-6">
+  <div class="card-columns">
+    {% for post in site.posts %}
+    {% if page.tags contains post.category %}
+    <div class="card">
+      {% if post.feat_image %}
+      <img class="card-img-top" alt="featured image" src="{{ post.feat_image | relative_url }}" />
+      {% endif %}
+      <div class="service service-summary p-2">
+        <div class="service-content">
+          <h2 class="card-title">
+            <a class="stretched-link" href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a>
+          </h2>
+          <p class="card-text">{{ post.content | markdownify | strip_html | truncate: 150 }}</p>
+      </div>
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+<!--
+<div class="container pt-6 pb-6">
   <div class="row">
-    {% for post in site.categories[page.tag] %}
+    {% for post in site.posts %}
+    {% if page.tags contains post.category %}
     <div class="col-12 col-md-6 mb-3">
       <div class="service service-summary">
         <div class="service-content">
@@ -32,6 +56,8 @@ bodyClass: page-services-list
         </div>
       </div>
     </div>
+    {% endif %}
     {% endfor %}
   </div>
 </div>
+-->
