@@ -1,7 +1,7 @@
 baseurl: ''
 exclude: ['README.md']
 permalink: pretty
-title: 'Groverly Conscious'
+title: 'Groverly'
 
 google_analytics_id: null
 homepage:
@@ -14,7 +14,7 @@ footer:
   copyright_text: '© Linnea Groot & David Verweij 2020'
 
 seo:
-  meta_og_title: "Groverly Conscious"
+  meta_og_title: "Groverly"
   meta_og_type: "website"
   meta_og_url: ""
   meta_og_image: ""
